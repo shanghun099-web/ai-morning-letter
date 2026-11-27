@@ -1,0 +1,12 @@
+{
+  "_설명": "요약에 쓸 AI 순서. 앞에서부터 쓰고, 실패(한도 초과 등)하면 다음 것으로 넘어간다. 'gemini' = 무료 Gemini API 키, 'openai' = GPT API 키(유료, 아주 적게 씀).",
+  "summary_order": ["gemini", "openai"],
+  "brief_order": ["gemini", "openai"],
+  "gemini_models": ["gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"],
+  "openai_models": ["gpt-5-mini", "gpt-4.1-mini"],
+  "max_items_per_run": 40,
+  "batch_size": 20,
+  "max_age_hours": 48,
+  "keep_days": 60,
+  "timezone_offset_hours": 9
+}

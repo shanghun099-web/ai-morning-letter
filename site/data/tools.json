@@ -1,0 +1,29 @@
+{
+ "claude_code": {
+  "name": "Claude Code",
+  "version": "v2.1.332",
+  "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+  "published": "2026-11-25T01:32:14+00:00",
+  "summary_ko": "MCP 서버의 스킬을 메뉴에 추가하고, 셸 명령어 실행을 거부하는 PreSkillShellCommand 후크 이벤트를 도입했어요. 세션 간 메시지 전달 기능과 VS Code 및 데스크탑 앱의 저장 경고 기능이 개선되었어요.",
+  "raw": false,
+  "found": "2026-11-27"
+ },
+ "gemini_cli": {
+  "name": "Gemini CLI",
+  "version": "Release v0.71.1",
+  "link": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1",
+  "published": "2026-11-24T03:50:24+00:00",
+  "summary_ko": "v0.71.0 버전을 위한 패치인 v0.71.1 버전이 배포되었어요. 관련 체리픽 내용이 적용되었어요.",
+  "raw": false,
+  "found": "2026-11-27"
+ },
+ "codex": {
+  "name": "Codex CLI",
+  "version": "0.172.0",
+  "link": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+  "published": "2026-11-24T00:06:41+00:00",
+  "summary_ko": "검색 결과에서 스레드 링크를 따라 터미널에서 대화와 에이전트를 열 수 있게 되었어요. 탭 키로 슬래시 명령어 인자를 완성하고 작업 그룹 사이를 이동하는 기능이 추가되었어요.",
+  "raw": false,
+  "found": "2026-11-27"
+ }
+}

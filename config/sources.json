@@ -1,0 +1,30 @@
+{
+  "_설명": "모을 곳 목록. filter=true 면 AI 관련 낱말이 있는 글만 고른다. category 는 힌트(최종은 AI 가 정함). tools 는 '내가 쓰는 도구 업데이트' 칸으로 간다. 끄려면 enabled 를 false 로.",
+  "sources": [
+    {"id": "geeknews", "name": "긱뉴스", "url": "https://news.hada.io/rss/news", "lang": "ko", "filter": true, "limit": 40, "enabled": true},
+    {"id": "openai", "name": "OpenAI 뉴스", "url": "https://openai.com/news/rss.xml", "lang": "en", "filter": false, "limit": 10, "enabled": true},
+    {"id": "google_ai", "name": "Google AI 블로그", "url": "https://blog.google/technology/ai/rss/", "lang": "en", "filter": false, "limit": 10, "enabled": true},
+    {"id": "deepmind", "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "lang": "en", "filter": false, "limit": 10, "enabled": true},
+    {"id": "hf_blog", "name": "Hugging Face 블로그", "url": "https://huggingface.co/blog/feed.xml", "lang": "en", "filter": false, "limit": 10, "enabled": true},
+    {"id": "simonw", "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "lang": "en", "filter": true, "limit": 15, "enabled": true},
+    {"id": "hn", "name": "Hacker News", "url": "https://hnrss.org/frontpage?points=100", "lang": "en", "filter": true, "limit": 30, "enabled": true},
+    {"id": "producthunt", "name": "Product Hunt", "url": "https://www.producthunt.com/feed", "lang": "en", "filter": true, "limit": 30, "enabled": true},
+    {"id": "hf_papers", "name": "HF 오늘의 논문", "url": "https://huggingface.co/api/daily_papers?limit=15", "kind": "hf_papers", "lang": "en", "filter": false, "limit": 8, "enabled": true},
+    {"id": "arxiv_qfin", "name": "arXiv 금융", "url": "https://rss.arxiv.org/rss/q-fin", "lang": "en", "filter": true, "strict": true, "limit": 30, "enabled": true},
+    {"id": "quantocracy", "name": "Quantocracy", "url": "https://quantocracy.com/feed/", "lang": "en", "filter": true, "strict": true, "limit": 20, "enabled": false, "_끈 이유": "2026-11-27 피드 주소가 FeedBurner 빈 페이지로 넘어감"},
+
+    {"id": "claude_code", "name": "Claude Code", "url": "https://github.com/anthropics/claude-code/releases.atom", "lang": "en", "tools": true, "limit": 3, "enabled": true},
+    {"id": "codex", "name": "Codex CLI", "url": "https://github.com/openai/codex/releases.atom", "lang": "en", "tools": true, "limit": 3, "enabled": true, "skip_prerelease": true},
+    {"id": "gemini_cli", "name": "Gemini CLI", "url": "https://github.com/google-gemini/gemini-cli/releases.atom", "lang": "en", "tools": true, "limit": 3, "enabled": true, "skip_prerelease": true}
+  ],
+  "keywords": [
+    "ai", "a.i.", "llm", "llms", "gpt", "chatgpt", "openai", "claude", "anthropic", "gemini", "deepmind", "llama", "llama.cpp", "mistral", "qwen", "deepseek",
+    "agent", "agents", "agentic", "copilot", "codex", "mcp", "rag", "transformer", "diffusion model", "neural", "machine learning", "deep learning",
+    "language model", "inference", "fine-tun", "prompt", "embedding", "multimodal", "text-to-", "tts", "speech synthesis", "voice clone", "video generation", "image generation",
+    "sora", "veo", "runway", "kling", "midjourney", "stable diffusion", "elevenlabs", "suno", "nano banana",
+    "인공지능", "에이전트", "생성형", "언어모델", "언어 모델", "프롬프트", "클로드", "제미나이", "챗gpt", "코덱스", "딥러닝", "머신러닝", "llm"
+  ],
+  "strict_keywords": [
+    "ai", "artificial intelligence", "machine learning", "deep learning", "neural", "llm", "language model", "transformer", "reinforcement learning", "agent"
+  ]
+}
