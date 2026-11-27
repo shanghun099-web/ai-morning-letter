@@ -7,7 +7,7 @@
 2. `config/sources.json` 의 공식 피드(RSS/Atom)를 읽음 → 새 글만 → AI 관련만
 3. **Gemini(무료 키)** 로 한국어 요약·분류·중요도. 실패하면 **GPT(OpenAI 키)** 로 넘어감 (`config/settings.json` 에서 순서 바꿈)
 4. 같은 소식 묶기 + '오늘의 3줄' → `site/data/` 에 저장하고 커밋
-5. **Vercel** 이 커밋을 받아 `site/` 를 배포. Vercel 로그인 잠금으로 나만 봄
+5. 같은 작업이 이어서 `site/` 를 **GitHub Pages** 로 배포 → https://shanghun099-web.github.io/ai-morning-letter/
 
 원문 본문은 저장하지 않음 (제목·짧은 요약·원문 링크만).
 

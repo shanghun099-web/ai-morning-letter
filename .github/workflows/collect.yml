@@ -5,9 +5,14 @@ on:
     - cron: "17 21 * * *"   # 매일 오전 6:17 (한국 시간)
     - cron: "17 9 * * *"    # 매일 오후 6:17 (한국 시간)
   workflow_dispatch: {}     # Actions 화면의 'Run workflow' 단추로 직접 실행
+  push:                     # 화면·설정을 고쳐 올리면 다시 배포만
+    branches: [main]
+    paths: ["site/**", ".github/workflows/**"]
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: collect
@@ -15,6 +20,7 @@ concurrency:
 
 jobs:
   collect:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -36,7 +42,6 @@ jobs:
 
       - name: 결과 저장(커밋)
         run: |
-          # Vercel 무료 플랜은 저장소 주인이 만든 커밋만 배포하므로 주인 이름으로 커밋한다
           git config user.name "shanghun099-web"
           git config user.email "248085989+shanghun099-web@users.noreply.github.com"
           git add site/data state
@@ -47,3 +52,21 @@ jobs:
             git pull --rebase --autostash
             git push
           fi
+
+  deploy:
+    needs: collect
+    if: always() && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # 방금 커밋한 소식까지 포함
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: pages
+        uses: actions/deploy-pages@v4
