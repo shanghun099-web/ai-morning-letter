@@ -1,17 +1,18 @@
 {
- "updated_at": "2026-11-27T11:35+00:00",
+ "updated_at": "2026-11-28T03:57+00:00",
  "days": [
+  "2026-11-28",
   "2026-11-27"
  ],
  "status": {
-  "run_at": "2026-11-27T11:35+00:00",
+  "run_at": "2026-11-28T03:57+00:00",
   "sources": [
    {
     "id": "geeknews",
     "name": "긱뉴스",
     "ok": true,
     "count": 20,
-    "new": 0
+    "new": 3
    },
    {
     "id": "openai",
@@ -38,8 +39,8 @@
     "id": "hf_blog",
     "name": "Hugging Face 블로그",
     "ok": true,
-    "count": 918,
-    "new": 0
+    "count": 919,
+    "new": 1
    },
    {
     "id": "simonw",
@@ -52,15 +53,15 @@
     "id": "hn",
     "name": "Hacker News",
     "ok": true,
-    "count": 17,
-    "new": 0
+    "count": 20,
+    "new": 5
    },
    {
     "id": "producthunt",
     "name": "Product Hunt",
     "ok": true,
     "count": 50,
-    "new": 1
+    "new": 3
    },
    {
     "id": "hf_papers",
@@ -73,7 +74,7 @@
     "id": "arxiv_qfin",
     "name": "arXiv 금융",
     "ok": true,
-    "count": 25,
+    "count": 0,
     "new": 0
    },
    {
@@ -87,7 +88,7 @@
     "id": "codex",
     "name": "Codex CLI",
     "ok": true,
-    "count": 1,
+    "count": 0,
     "new": 0
    },
    {
@@ -101,7 +102,7 @@
   "llm": {
    "summary": "gemini:gemini-3.5-flash-lite",
    "brief": "gemini:gemini-3.5-flash-lite",
-   "added": 1,
+   "added": 10,
    "raw": 0
   },
   "errors": []
