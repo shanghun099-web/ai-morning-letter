@@ -104,6 +104,7 @@ function card(it) {
     if (cat === "star") renderList();
   });
   paint();
+  if (typeof GPT !== "undefined") GPT.attach(node, it);
   return node;
 }
 
