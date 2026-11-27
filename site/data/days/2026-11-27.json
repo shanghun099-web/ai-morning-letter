@@ -64,6 +64,25 @@
    "also": []
   },
   {
+   "id": "e06efe7d5d",
+   "source": "producthunt",
+   "source_name": "Product Hunt",
+   "link": "https://www.producthunt.com/products/magi-1",
+   "title": "MAGI-2",
+   "title_ko": "Sand AI, 영화급 영상 제작 모델 MAGI-2 공개",
+   "summary_ko": "Sand AI에서 480B 규모의 영화 같은 영상 생성을 위한 모델 MAGI-2를 선보였어요. 관련 내용에 대한 토론이 이어지고 있어요.",
+   "why": "유튜브 쇼츠 채널에 쓸 고퀄리티 영상을 만드는 데 큰 도움이 될 수 있어요.",
+   "idea": "누에마 쇼츠에 쓸 감성적인 배경 영상이나 수채화풍 장면을 더 멋지게 만드는 데 써 볼 수 있어요.",
+   "kind": "발표",
+   "category": "video",
+   "importance": 3,
+   "thin": false,
+   "raw": false,
+   "published": "2026-11-25T05:35:39+00:00",
+   "tools": false,
+   "also": []
+  },
+  {
    "id": "15aa96a954",
    "source": "claude_code",
    "source_name": "Claude Code",
@@ -370,23 +389,23 @@
  ],
  "brief": [
   {
-   "text": "Claude Code가 MCP 메뉴 추가 및 훅 이벤트를 도입했어요.",
+   "text": "구글이 AI 에이전트의 Gmail 및 Drive 접근에 공식 MCP 사용을 의무화했어요.",
    "ids": [
-    "15aa96a954"
+    "be43940f7f"
    ]
   },
   {
-   "text": "OpenAI의 GPT-6.2 모델이 추론 토큰을 줄여 비용 절감에 나섰어요.",
+   "text": "오픈AI의 GPT-6.2 모델이 전작보다 추론 토큰을 적게 사용하여 비용 절감에 나섰어요.",
    "ids": [
     "a447c99793"
    ]
   },
   {
-   "text": "구글이 AI 에이전트의 Workspace 접근에 공식 MCP를 의무화했어요.",
+   "text": "Sand AI가 영화급 영상을 생성할 수 있는 480B 규모의 MAGI-2 모델을 공개했어요.",
    "ids": [
-    "be43940f7f"
+    "e06efe7d5d"
    ]
   }
  ],
- "updated_at": "2026-11-27T11:26+00:00"
+ "updated_at": "2026-11-27T11:35+00:00"
 }
